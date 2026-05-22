@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "8c53f06b-0642-4caa-aab7-b4f4db2b86e4",
+		"name": "WeatherApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9163662"
+	},
+	"item": [
+		{
+			"name": "GET Live Weather",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/weather?city=Quezon City",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Quezon City"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Cached Weather",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/weather/cached?city=Quezon%20City",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"weather",
+						"cached"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Quezon%20City"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
